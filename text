@@ -1,0 +1,66 @@
+/*----------------color-----------*/
+background: #83B735;
+  color: #83B735;
+  background: #F8F8F8;
+  color: #7A7A7A;
+
+
+/*----------------font family-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/ios/50/000000/sofa.png"/>
+<img src="https://img.icons8.com/ios/50/000000/stir.png"/>
+<img src="https://img.icons8.com/dotty/80/000000/shopping--v1.png"/>
+<img src="https://img.icons8.com/ios/50/000000/clothes.png"/>
+<img src="https://img.icons8.com/ios/50/000000/clock.png"/>
+<img src="https://img.icons8.com/dotty/80/000000/light.png"/>
+<img src="https://img.icons8.com/ios/50/000000/baby-yoda.png"/>
+<img src="https://img.icons8.com/pastel-glyph/64/000000/lemon-cake--v1.png"/>
+<img src="https://img.icons8.com/windows/32/000000/bag-front-view.png"/>
+<img src="https://img.icons8.com/ios/50/000000/multiple-devices.png"/>
+<img src="https://img.icons8.com/ios-glyphs/30/000000/car--v1.png"/>
+
+
+
+
+
+
+
+
+/*----------------icon-----------*/
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fas fa-envelope"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-pinterest"></i>
+
+
+<i class="fas fa-random"></i>
+<i class="far fa-shopping-bag"></i>
+
+
+<i class="far fa-comment-alt"></i>
+<i class="far fa-share-alt"></i>
+
+
+<i class="far fa-location-arrow"></i>
+<i class="fas fa-mobile-alt"></i>
+<i class="far fa-envelope"></i>
+/*----------------text-----------*/
+Furniture
+Cooking
+Accessories
+Fashion
+Clocks
+Lighting
+Toys
+Hand Made
+Minimalism
+Electronics
+Cars

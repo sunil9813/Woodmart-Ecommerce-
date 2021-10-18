@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Portfolio Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  fontawesome   -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--  fontawesome   -->
+
+  <!--   css file   -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--   css file   -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--   swiper file   -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--   swiper file   -->
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="head_left flex">
+        <select>
+          <option>ENGLISH</option>
+        </select>
+        <select>
+          <option>COUNTRY</option>
+        </select>
+        <h4>FREE SHIPPING FOR ALL ORDERS OF $150 </h4>
+      </div>
+      <div class="head_right flex">
+        <div class="social_media flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-envelope"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+
+        <h4>
+          <i class="fas fa-envelope"></i>
+          NEWSLETTER
+        </h4>
+        <h4>CONTACT</h4>
+        <h4>FAQS</h4>
+      </div>
+    </div>
+  </section>
+  <section class="search_head">
+    <div class="container flex1">
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search for products">
+        <select>
+          <option>SELECT CATEGORY</option>
+        </select>
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="account flex">
+        <h4>LOGIN / REGISTER</h4>
+        <i class="far fa-heart"></i>
+        <div class="icon">
+          <i class="fas fa-random"></i>
+          <span>0</span>
+        </div>
+        <div class="icon">
+          <i class="far fa-shopping-bag"></i>
+          <span>0</span>
+        </div>
+        <h4>$0.00</h4>
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="sticky_logo logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <div class="category flex">
+          <i class="fas fa-bars"></i>
+          <select>
+            <option>BROWSER CATEGORY</option>
+          </select>
+        </div>
+        <ul class="nav-menu">
+          <li> <a href="#home" class="active">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+          <li> <a href="#services">services</a> </li>
+          <li> <a href="#skills">works</a> </li>
+          <li> <a href="#portoflio">portoflio</a> </li>
+          <li> <a href="#blog">blog</a> </li>
+          <li class="nav-item"> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="offer flex">
+          <h4> SPECIAL OFFER </h4>
+          <h4> PURCHASE THEME</h4>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+
+  <section class="home">
+    <div class="container flex">
+      <div class="left">
+        <div class="category_text">
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/sofa.png" />
+              <h4>Furniture</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/stir.png" />
+              <h4>Cooking</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/dotty/80/000000/shopping--v1.png" />
+              <h4>Accessories</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/clothes.png" />
+              <h4>Fashion</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/clock.png" />
+              <h4>Clocks</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/dotty/80/000000/light.png" />
+              <h4>Lighting</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/baby-yoda.png" />
+              <h4>Toys</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/pastel-glyph/64/000000/lemon-cake--v1.png" />
+              <h4>Hand Made</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/windows/32/000000/bag-front-view.png" />
+              <h4>Minimalism</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios/50/000000/multiple-devices.png" />
+              <h4>Electronics</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/car--v1.png" />
+              <h4>Cars</h4>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="text">
+                  <h1>Simple - Rock Chair</h1>
+                  <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="change flex">
+                    <img src="image/slider1.1.jpg" onclick="img('image/slider1.1.jpg')">
+                    <img src="image/slider1.2.jpg" onclick="img('image/slider1.2.jpg')">
+                    <img src="image/slider1.3.jpg" onclick="img('image/slider1.3.jpg')">
+                    <img src="image/slider1.4.jpg" onclick="img('image/slider1.4.jpg')">
+                  </div>
+                  <h2>$199.00</h2>
+                </div>
+                <div class="image">
+                  <img src="image/slider1.jpg" class="slide">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item item1">
+                <div class="text">
+                  <h1>Eames - Side Chair</h1>
+                  <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="change color flex">
+                    <h4>COLOR</h4>
+                    <div class="color_icon flex">
+                      <span onclick="img1('image/slider2.jpg')"></span>
+                      <span onclick="img1('image/slider2.1.jpg')"></span>
+                      <span onclick="img1('image/slider2.2.jpg')"></span>
+                    </div>
+                  </div>
+                  <h2>Only $199.00</h2>
+                </div>
+                <div class="image">
+                  <img src="image/slider2.jpg" class="slide1">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item item2">
+                <div class="text">
+                  <h4>CAPPELLINI</h4>
+                  <h1>Wooden Lounfe Chairs</h1>
+                  <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h2> $199.00</h2>
+                </div>
+                <div class="image">
+                  <img src="image/slider3.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 7000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.item');
+      line.style.background = change;
+    }
+
+    function img1(anything) {
+      document.querySelector('.slide1').src = anything;
+    }
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.js" integrity="sha512-5RPueBRwDHxZ362heK/fya6Azw6ayHtn7nTqZnIoGFjiXdGAEvAjKco/FvzpTEIbfJI2Qxirl0/g21qizV/a/g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelector(".image"), {
+      max: 25,
+      speed: 400
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".image"));
+  </script>
+
+
+
+
+
+  <section class="collections top">
+    <div class="container">
+      <div class="heading">
+        <h5>WOODMART COLLECTIONS </h5>
+        <h2>FEATURED CATEGORIES </h2>
+        <p>WoodMart is a powerful eCommerce theme for WordPress. </p>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <div class="img">
+            <img src="image/cat1.jpg" alt="">
+          </div>
+          <div class="para">
+            <div class="text">
+              <h4>FURNITURE</h4>
+            </div>
+            <div class="overlay">
+              <h3>22 Product</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="right grid">
+          <div class="box">
+            <div class="img">
+              <img src="image/cat2.jpg" alt="">
+            </div>
+            <div class="para">
+              <div class="text">
+                <h4>CLOCKS</h4>
+              </div>
+              <div class="overlay">
+                <h3>12 Product</h3>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/cat3.jpg" alt="">
+            </div>
+            <div class="para">
+              <div class="text">
+                <h4>ACCESSORIES</h4>
+              </div>
+              <div class="overlay">
+                <h3>12 Product</h3>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/cat4.jpg" alt="">
+            </div>
+            <div class="para">
+              <div class="text">
+                <h4>LIGHTING</h4>
+              </div>
+              <div class="overlay">
+                <h3>12 Product</h3>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="image/cat2.jpg" alt="">
+            </div>
+            <div class="para">
+              <div class="text">
+                <h4>TOYS</h4>
+              </div>
+              <div class="overlay">
+                <h3>52 Product</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="products top">
+    <div class="container">
+      <div class="heading">
+        <h5>WOODMART COLLECTIONS </h5>
+        <h2>FEATURED PRODUCTS </h2>
+        <p>WoodMart is a powerful eCommerce theme for WordPress. </p>
+        <ul>
+          <li class="active">BEST SELLER</li>
+          <li>FEATURED</li>
+          <li>SALES</li>
+        </ul>
+      </div>
+
+
+      <div class="swiper mySwiper1 mtop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide grid2">
+            <div class="box">
+              <div class="img">
+                <div class="circle">
+                  Sale
+                </div>
+                <img src="image/p1.jpg" alt="">
+                <img src="image/p1.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p2.jpg" class="products_change">
+              </div>
+              <div class="text">
+                <p>Smart watches wood editionl</p>
+                <label>Accessories, Clocks</label>
+                <h4>$599.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon flex1">
+                  <div class="color_icon flex">
+                    <span onclick="img2('image/p2.jpg')"></span>
+                    <span onclick="img2('image/p2.1.jpg')"></span>
+                  </div>
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <div class="circle circle2">
+                  New
+                </div>
+                <img src="image/p3.jpg" class="products_change1">
+              </div>
+              <div class="text">
+                <p>Smart watches wood editionl</p>
+                <label>Accessories, Clocks</label>
+                <h4>$599.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon flex1">
+                  <div class="color_icon flex">
+                    <span onclick="img3('image/p3.jpg')"></span>
+                    <span onclick="img3('image/p3.2.jpg')"></span>
+                    <span onclick="img3('image/p3.1.jpg')"></span>
+                  </div>
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <!--  form here same -->
+            <div class="box">
+              <div class="img">
+                <img src="image/p4.jpg" alt="">
+                <img src="image/p4.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p5.jpg" alt="">
+                <img src="image/p5.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p6.jpg" alt="">
+                <img src="image/p6.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p7.jpg" alt="">
+                <img src="image/p7.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p8.jpg" alt="">
+                <img src="image/p8.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid2">
+            <div class="box">
+              <div class="img">
+                <div class="circle">
+                  Sale
+                </div>
+                <img src="image/p1.jpg" alt="">
+                <img src="image/p1.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p2.jpg" class="products_change">
+              </div>
+              <div class="text">
+                <p>Smart watches wood editionl</p>
+                <label>Accessories, Clocks</label>
+                <h4>$599.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon flex1">
+                  <div class="color_icon flex">
+                    <span onclick="img2('image/p2.jpg')"></span>
+                    <span onclick="img2('image/p2.1.jpg')"></span>
+                  </div>
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <div class="circle circle2">
+                  New
+                </div>
+                <img src="image/p3.jpg" class="products_change1">
+              </div>
+              <div class="text">
+                <p>Smart watches wood editionl</p>
+                <label>Accessories, Clocks</label>
+                <h4>$599.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon flex1">
+                  <div class="color_icon flex">
+                    <span onclick="img3('image/p3.jpg')"></span>
+                    <span onclick="img3('image/p3.2.jpg')"></span>
+                    <span onclick="img3('image/p3.1.jpg')"></span>
+                  </div>
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p8.jpg" alt="">
+                <img src="image/p8.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <!--  form here same -->
+            <div class="box">
+              <div class="img">
+                <div class="circle">
+                  Sale
+                </div>
+                <img src="image/p1.jpg" alt="">
+                <img src="image/p1.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p6.jpg" alt="">
+                <img src="image/p6.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p2.jpg" class="products_change">
+              </div>
+              <div class="text">
+                <p>Smart watches wood editionl</p>
+                <label>Accessories, Clocks</label>
+                <h4>$599.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon flex1">
+                  <div class="color_icon flex">
+                    <span onclick="img2('image/p2.jpg')"></span>
+                    <span onclick="img2('image/p2.1.jpg')"></span>
+                  </div>
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="image/p7.jpg" alt="">
+                <img src="image/p7.1.jpg" class="img-top">
+              </div>
+              <div class="text">
+                <p>Photo camera wooden model</p>
+                <label>Accessories</label>
+                <h4>$259.00</h4>
+              </div>
+              <div class="overlay">
+                <div class="icon">
+                  <i class="fas fa-random"></i>
+                </div>
+
+                <div class="para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. </p>
+                </div>
+
+                <div class="button flex1">
+                  <i class="far fa-heart"></i>
+                  <button>ADD TO CART</button>
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function img2(anything) {
+      document.querySelector('.products_change').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.products');
+      line.style.background = change;
+    }
+
+    function img3(anything) {
+      document.querySelector('.products_change1').src = anything;
+    }
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      autoplay: {
+        delay: 90000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+  <section class="wrapper top">
+    <div class="container">
+      <div class="swiper mySwiper mySwiper2 mtop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex">
+            <div class="left">
+              <div class="img">
+                <img src="image/wraper1.png" alt="">
+              </div>
+            </div>
+            <div class="right mtop">
+              <h4>PRODUCTS LANDING PAGE</h4>
+              <h1>Woodspot - Modern Pattern.</h1>
+
+              <div class="para flex1">
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+              </div>
+              <div class="button flex">
+                <h2>$299.99</h2>
+                <button class="btn1">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex">
+            <div class="left">
+              <div class="img">
+                <img src="image/wraper2.png" alt="">
+              </div>
+            </div>
+            <div class="right mtop">
+              <h4>PRODUCTS LANDING PAGE</h4>
+              <h1>Woodspot - Modern Pattern.</h1>
+
+              <div class="para flex1">
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+              </div>
+              <div class="button flex">
+                <h2>$299.99</h2>
+                <button class="btn1">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex">
+            <div class="left">
+              <div class="img">
+                <img src="image/wraper3.png" alt="">
+              </div>
+            </div>
+            <div class="right mtop">
+              <h4>PRODUCTS LANDING PAGE</h4>
+              <h1>Woodspot - Modern Pattern.</h1>
+
+              <div class="para flex1">
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+                <div class="text">
+                  <h5>DESIGNER:</h5>
+                  <span>Ghislain Magrite</span>
+                </div>
+              </div>
+              <div class="button flex">
+                <h2>$299.99</h2>
+                <button class="btn1">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      autoplay: {
+        delay: 10000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <section class="contact top">
+    <div class="container flex">
+      <div class="left top">
+        <h4>ALL-IN-ONE ECOMMERCE SOLUTION </h4>
+        <h1>WoodMart - WooCommerce Theme</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <div class="button flex">
+          <button>READ MORE</button>
+          <button class="btn1">CONTACT US</button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/contact.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="newsletter flex top">
+    <div class="img">
+      <img src="image/n.jpg" alt="">
+    </div>
+    <div class="left">
+      <h1>JOIN OUR NEWSLETTER NOW </h1>
+      <div class="input">
+        <input type="text" placeholder="Your email address">
+        <button>SIGN UP</button>
+      </div>
+      <p>Copyright (c) 2021 Copyright Holder All Rights Reserved. <a href="#">Privacy Policy</a> </p>
+    </div>
+  </section>
+
+  <section class="blog top">
+    <div class="container">
+      <div class="heading">
+        <h4>FURNITURE GUIDES</h4>
+        <h1>OUR LATEST NEWS </h1>
+        <p>Latest trends and inspiration in interior design. </p>
+      </div>
+
+      <div class="swiper mySwiper3 mtop">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="img">
+                <img src="image/b1.jpg" alt="">
+                <h3> <span>20</span> JUL </h3>
+                <label>DESIGN TRENDS, FURNITURE</label>
+              </div>
+              <div class="text">
+                <h2>Seating collection inspiration</h2>
+                <div class="flex">
+                  <h5>Posted By </h5>
+                  <img src="image/b1.jpg" alt="">
+                  <h5>Alex Ander</h5>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="far fa-share-alt"></i>
+                </div>
+                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn1">CONTINUE READING</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="img">
+                <img src="image/b2.jpg" alt="">
+                <h3> <span>20</span> JUL </h3>
+                <label>DESIGN TRENDS, FURNITURE</label>
+              </div>
+              <div class="text">
+                <h2>Seating collection inspiration</h2>
+                <div class="flex">
+                  <h5>Posted By </h5>
+                  <img src="image/b1.jpg" alt="">
+                  <h5>Alex Ander</h5>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="far fa-share-alt"></i>
+                </div>
+                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn1">CONTINUE READING</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="img">
+                <img src="image/b3.jpg" alt="">
+                <h3> <span>20</span> JUL </h3>
+                <label>DESIGN TRENDS, FURNITURE</label>
+              </div>
+              <div class="text">
+                <h2>Seating collection inspiration</h2>
+                <div class="flex">
+                  <h5>Posted By </h5>
+                  <img src="image/b1.jpg" alt="">
+                  <h5>Alex Ander</h5>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="far fa-share-alt"></i>
+                </div>
+                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn1">CONTINUE READING</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="img">
+                <img src="image/b4.jpg" alt="">
+                <h3> <span>20</span> JUL </h3>
+                <label>DESIGN TRENDS, FURNITURE</label>
+              </div>
+              <div class="text">
+                <h2>Seating collection inspiration</h2>
+                <div class="flex">
+                  <h5>Posted By </h5>
+                  <img src="image/b1.jpg" alt="">
+                  <h5>Alex Ander</h5>
+                  <i class="far fa-comment-alt"></i>
+                  <i class="far fa-share-alt"></i>
+                </div>
+                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn1">CONTINUE READING</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 10000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetweenSlides: 30
+        },
+        511: {
+          slidesPerView: 1,
+          spaceBetweenSlides: 30
+        },
+        999: {
+          slidesPerView: 3,
+          spaceBetweenSlides: 30
+        }
+      }
+    });
+  </script>
+
+
+  <footer>
+    <div class="container grid2 top">
+      <div class="box">
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icon">
+          <div class="flex">
+            <i class="far fa-location-arrow"></i>
+            <span>Kathmandu , Nepal</span>
+          </div>
+          <div class="flex">
+            <i class="fas fa-mobile-alt"></i>
+            <span>+123 456 7898</span>
+          </div>
+          <div class="flex">
+            <i class="far fa-envelope"></i>
+            <span>dotstudio@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>RECENT POSTS</h3>
+        <div class="flex">
+          <img src="image/b2.jpg" alt="">
+          <p>Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+        <div class="flex">
+          <img src="image/b4.jpg" alt="">
+          <p>Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>OUR STORIES </h3>
+        <ul>
+          <li>Furniture </li>
+          <li> Cooking </li>
+          <li> Accessories </li>
+          <li> Fashion </li>
+          <li> Clocks </li>
+          <li> Lighting </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>USEFUL LINKS </h3>
+        <ul>
+          <li>Furniture </li>
+          <li> Cooking </li>
+          <li> Accessories </li>
+          <li> Fashion </li>
+          <li> Clocks </li>
+          <li> Lighting </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>FOOTER MENU </h3>
+        <ul>
+          <li>Furniture </li>
+          <li> Cooking </li>
+          <li> Accessories </li>
+          <li> Fashion </li>
+          <li> Clocks </li>
+          <li> Lighting </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
